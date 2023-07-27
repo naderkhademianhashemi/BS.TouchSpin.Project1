@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1E7ABA87-BFBA-4E8E-A04B-B29B25DD45B1}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>BS.TouchSpin.Project1</RootNamespace>
+    <AssemblyName>BS.TouchSpin.Project1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="bootstrap-touchspin\LICENSE.md" />
+    <None Include="bootstrap-touchspin\README.md" />
+    <None Include="bootstrap\fonts\bootstrap\glyphicons-halflings-regular.eot" />
+    <None Include="bootstrap\fonts\bootstrap\glyphicons-halflings-regular.ttf" />
+    <None Include="bootstrap\fonts\bootstrap\glyphicons-halflings-regular.woff" />
+    <None Include="bootstrap\fonts\bootstrap\glyphicons-halflings-regular.woff2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bootstrap-touchspin\bootstrap.touchspin.css" />
+    <Content Include="bootstrap-touchspin\bootstrap.touchspin.js" />
+    <Content Include="bootstrap-touchspin\bootstrap.touchspin.min.css" />
+    <Content Include="bootstrap-touchspin\bootstrap.touchspin.min.js" />
+    <Content Include="bootstrap\css\bootstrap-rtl.css" />
+    <Content Include="bootstrap\css\bootstrap-rtl.min.css" />
+    <Content Include="bootstrap\css\bootstrap.css" />
+    <Content Include="bootstrap\css\bootstrap.min.css" />
+    <Content Include="bootstrap\fonts\bootstrap\glyphicons-halflings-regular.svg" />
+    <Content Include="bootstrap\js\bootstrap.js" />
+    <Content Include="bootstrap\js\bootstrap.min.js" />
+    <Content Include="html\HTMLPage1.html" />
+    <Content Include="js\components-bootstrap-touchspin.js" />
+    <Content Include="js\jquery.min.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
